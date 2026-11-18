@@ -1,0 +1,19 @@
+# Merge into the profile's config.yaml. The point of this profile is a small surface:
+# one MCP server, and no terminal, file or web tools in chat, so the approval gate in
+# stretch-mcp cannot be walked around from the same host.
+mcp_servers:
+  stretch:
+    command: /home/hermes/stretch-mcp/.venv/bin/stretch-mcp
+    env:
+      STRETCH_MCP_ENV: /home/hermes/stretch-mcp/.env
+    enabled: true
+platform_toolsets:
+  cli:
+    - clarify
+    - memory
+    - session_search
+  matrix:
+    - clarify
+    - memory
+    - session_search
+    - todo

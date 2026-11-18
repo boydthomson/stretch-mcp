@@ -1,0 +1,1 @@
+Write this morning's brief for Boyd. Call the daily_brief tool once, with no date, and follow the "Morning brief" section of your instructions exactly. Use only what the tool returned. If a section is listed under unavailable, say that you could not check it.

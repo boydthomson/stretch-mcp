@@ -1,0 +1,21 @@
+[project]
+name = "stretch-mcp"
+version = "0.1.0"
+description = "MCP server that gives an operations agent governed access to a yoga studio's systems"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["mcp>=2,<3"]
+
+[project.scripts]
+stretch-mcp = "stretch_mcp.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
